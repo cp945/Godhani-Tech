@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godhani Technology</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External stylesheet -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+          background-color: #0056b3;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header .logo {
+            max-width: 150px;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+       
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background-color: #e3f2fd;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 2rem;
+            color: #0056b3;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .about {
+            background-color: #f9f9f9;
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgb(241, 238, 238);
+        }
+        .testimonials-section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.testimonials-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+        .testimonial-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding: 20px;
+    }
+    .testimonial-card {
+        background-color: #f1f1f1;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 8px;
+        width: 30%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .testimonial-card p {
+        font-size: 1rem;
+        color: #333;
+    }
+    .testimonial-card p:first-child {
+        font-style: italic;
+        font: bolder;
+        margin-bottom: 10px;
+    }
+
+
+         /* Footer */
+         footer {
+    background-color: #333;
+    color: white;
+    text-align: center; /* Centers the text */
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: center; /* Centers the social media links */
+    gap: 10px;
+}
+        .social-links a {
+            padding: 10px;
+            background: #e2e3e6;
+            border-radius: 50%;
+            transition: background 0.3s ease;
+        }
+        .social-links a:hover {
+            background: #7fc4e2;
+        }
+         /* Animations */
+         @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+  <header style="display: flex; align-items: center; justify-content: flex-start; padding: 20px;">
+    <img src="Godhani_Technology-removebg-preview.png" alt="Godhani Technology Logo" style="height: 500px; margin-right: 20px;">
+    <div>
+        <h1 style="margin: 0; font-size: 3rem;">Godhani Technology</h1>
+        <p>Innovating for the Future</p>
+    </div>
+</header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="quote.html">Get a Quote</a>
+    </nav>
+
+    <div class="hero">
+        <h2>Innovating the Future with Technology</h2>
+        <p>We provide cutting-edge solutions in web, app, and AI-driven hardware development.</p>
+        <button onclick="window.location.href='services.html'" style="padding: 10px 20px; background-color: #0056b3; color: white; border: none; border-radius: 4px; cursor: pointer;">
+            Explore Services
+        </button>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="about">
+        <h2>About Us</h2>
+        <p>
+            At Godhani Technology, we are passionate about delivering innovative and reliable technology solutions.
+            With expertise in web and mobile app development, AI-driven hardware, and software development, we empower businesses to achieve their goals.
+            Our team of experienced professionals is dedicated to providing scalable, user-friendly, and performance-driven applications tailored to our clients’ unique needs.
+            From startups to enterprises, we aim to be your trusted technology partner for growth and success.
+        </p>
+    </div>
+
+    <!-- Client Testimonial Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="testimonial-container">
+        <h2 class="testimonials-title">What Our Clients Say</h2>
+        <div class="testimonial-card">
+            <div class="client">
+                <img src="client1.jpg" alt="Client 1" class="testimonial-img">
+        <p>"Godhani Technology transformed our business with their innovative solutions. Their expertise in web development and AI technology helped us achieve outstanding results. Highly recommend!"</p>
+        <p class="client-name">- John Doe, CEO of TechInnovate</p>
+    </div>
+    </div>
+    <div class="testimonial-card">
+    <div class="client">
+        <img src="client2.jpg" alt="Client 2"class="testimonial-img">
+         <p>"Working with Godhani Technology was a game-changer for our company. Their attention to detail and commitment to excellence made all the difference in our project’s success."</p>
+         <p class="client-name">- Jane Smith, CTO of FutureTech</p>
+        </div>
+        </div>
+        <div class="testimonial-card">
+    <div class="client">
+            <img src="client3.jpg" alt="Client 3"class="testimonial-img">
+    <p>"The team at Godhani Technology truly understands our vision. Their seamless integration of AI into our products helped streamline operations and enhance customer experience."</p>
+    <p class="client-name">- Mark Johnson, Founder of Visionary Systems</p>    
+</div>
+</div>
+<div class="testimonial-card">
+<div class="client">
+    <img src="client4.jpg" alt="Client 4"class="testimonial-img">
+    <p>"We’ve worked with many tech firms, but Godhani Technology’s professionalism, innovation, and delivery time were unmatched. They exceeded our expectations!"</p>
+    <p class="client-name">- Sara Lee, Director of Digital Solutions</p>    
+</div>
+</div>
+</div>
+    <footer>
+        <div>
+        <p>&copy; 2024 Godhani Technology. All Rights Reserved.</p>
+        <ul class="social-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+        </ul>
+    </div>
+    </footer>
+</body>
+</html>
